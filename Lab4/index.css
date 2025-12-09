@@ -1,0 +1,13 @@
+#element9,
+.element10 {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons button {
+    margin: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
