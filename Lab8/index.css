@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.topbar {
+    background: #32404D;
+    color: white;
+    border-bottom: 1px solid #d9e4cf;
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.topbar-left .green {
+    color: #56a14b;
+    font-weight: 700;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.count {
+    text-align: center;
+    font-size: 13px;
+}
+
+.count strong {
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+}
+
+.learn-btn {
+    color: #B3D4FF;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.learn-btn:hover {
+    color: white;
+}
+
+.header {
+    background: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.logo span {
+    display: block;
+    font-size: 12px;
+    color: #777;
+    font-weight: 400;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #222;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #2b6cb0;
+}
+
+.right-header {
+    text-align: right;
+}
+
+.call {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.icons i {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #555;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    color: #2b6cb0;
+    transform: translateY(-2px);
+}
+
+.hero {
+    position: relative;
+    height: 520px;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.hero-bottom-bg {
+    background: #FCF1EB;
+    height: 40px;
+    width: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 500px;
+}
+
+.hero-top-text {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.hero-sub {
+    font-size: 16px;
+    max-width: 420px;
+    margin-bottom: 25px;
+}
+
+.green-btn {
+    background: #56a14b;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.green-btn:hover {
+    background: #3f7c37;
+}
+
+.teaching {
+    padding: 80px 0;
+    background: #FCF1EB;
+}
+
+.teach-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.teach-text h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.teach-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.learn-more {
+    color: #2b6cb0;
+    font-weight: 600;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.learn-more:hover {
+    color: #1c4780;
+}
+
+.programs {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.programs h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.program-sub {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.program-card {
+    background: #fff;
+    border: 1px solid #d7d7d7;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.program-card img {
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+.prog-text {
+    text-align: right;
+}
+
+.right-align h3,
+.right-align p,
+.right-align a {
+    text-align: left;
+}
+
+.prog-text h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.prog-text p {
+    margin-bottom: 12px;
+}
+
+.program-card:hover img {
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.resources {
+    padding: 80px 0;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.resources-blue-wrapper {
+    background: #e4f2f6;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.resources-blue-wrapper h2 {
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.resources-blue-wrapper > p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.res-box {
+    background: white;
+    padding: 18px 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.res-box h4 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.res-box p {
+    font-size: 14px;
+}
+
+.bordered {
+    border: 1px solid #cbd9df;
+}
+
+.circle-arrow {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid #8aa9b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: #497b8e;
+    transition: 0.3s;
+}
+
+.circle-arrow:hover {
+    background: #d5e7ee;
+    cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+    .nav {
+        gap: 18px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .teach-grid,
+    .programs-grid,
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        height: 420px;
+    }
+
+    .hero-text {
+        left: 5%;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .topbar {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .header-flex {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero {
+        height: 380px;
+    }
+
+    .teach-text h2 {
+        font-size: 30px;
+    }
+
+    .programs h2 {
+        font-size: 32px;
+    }
+
+    .resources-blue-wrapper h2 {
+        font-size: 26px;
+    }
+}
