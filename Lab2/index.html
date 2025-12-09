@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Table Hover Full Row + Squares</title>
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td {
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 22px;
+    font-weight: bold;
+    height: 80px;
+    transition: 0.25s;
+}
+
+.top-zone td {
+    background-color: #888f8f;
+    color: #ffffff;
+}
+
+.top-zone:hover td {
+    background-color: #f5f588;
+    color: #000000;
+}
+
+.row-bottom td {
+    background-color: #f5f588;
+    color: #000000;
+}
+.row-bottom:hover td {
+    background-color: #888f8f;
+    color: #ffffff;
+}
+</style>
+
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<table>
+
+<tbody class="top-zone">
+<tr>
+    <td colspan="2">Ткаченко</td>
+    <td rowspan="2">Євген</td>
+    <td>Костянтин</td>
+    <td rowspan="2">ович</td>
+</tr>
+<tr>
+    <td colspan="2"> </td>
+    <td> </td>
+</tr>
+</tbody>
+
+<tr class="row-bottom">
+    <td colspan="2">ІС-31</td>
+    <td colspan="3">Лабораторна №2, 138 варіант</td>
+</tr>
+
+</table>
+
+<div class="container">
+    <div class="square1"></div>
+    <div class="square2"></div>
+</div>
+
+</body>
+</html>
