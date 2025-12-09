@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Tkachenko Evgen IS-31</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<h2>Форма для варіанту 3</h2>
+
+<table>
+<tr><td>ПІБ</td><td><input id="pib" placeholder="ТТТТТТ Т.Т."></td></tr>
+<tr><td>Телефон</td><td><input id="phone" placeholder="(ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ"></td></tr>
+<tr><td>ID-card</td><td><input id="idcard" placeholder="ТТ №ЧЧЧЧЧЧ"></td></tr>
+<tr><td>Факультет</td><td><input id="faculty" placeholder="ТТТТ"></td></tr>
+<tr><td>Дата народження</td><td><input id="birth" placeholder="ЧЧ.ЧЧ.ЧЧЧЧ"></td></tr>
+</table>
+
+<br>
+<button onclick="validate()">Перевірити</button>
+
+<hr>
+
+<h2>Таблиця 6×6 (завдання 2)</h2>
+
+<label>Виберіть колір: <input type="color" id="pickColor" value="#00ffcc"></label>
+
+<br><br>
+
+<table id="gridTable"></table>
+
+<script src="index.js"></script>
+
+</body>
+</html>
