@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Float / Flex Switch</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="btn-panel">
+    <button onclick="showFloat()">Float Layout</button>
+    <button onclick="showFlex()">Flex Layout</button>
+</div>
+
+<div id="floatLayout" class="layout-block">
+
+    <div class="wrapper">
+
+        <header class="top-text">
+            TEXT
+        </header>
+
+        <section class="middle-block">
+            <div class="col img1">IMG</div>
+            <div class="col img2">IMG</div>
+            <div class="col text-side">TEXT</div>
+            <div class="clear"></div>
+        </section>
+
+        <footer class="bottom-text">
+            TEXT
+        </footer>
+
+    </div>
+
+</div>
+
+<div id="flexLayout" class="layout-block hidden">
+
+    <div class="wrapper-flex">
+
+        <header class="top-text-flex">
+            TEXT
+        </header>
+
+        <section class="middle-flex">
+            <div class="flex-item img1-flex">IMG</div>
+            <div class="flex-item img2-flex">IMG</div>
+            <div class="flex-item text-flex">TEXT</div>
+        </section>
+
+        <footer class="bottom-text-flex">
+            TEXT
+        </footer>
+
+    </div>
+
+</div>
+
+<script>
+    function showFloat() {
+        document.getElementById("floatLayout").classList.remove("hidden");
+        document.getElementById("flexLayout").classList.add("hidden");
+    }
+
+    function showFlex() {
+        document.getElementById("floatLayout").classList.add("hidden");
+        document.getElementById("flexLayout").classList.remove("hidden");
+    }
+</script>
+
+</body>
+</html>
