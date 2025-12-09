@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+}
+
+.square1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(221, 110, 17, 0.5); 
+    border: 5px solid black; 
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.square2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(130, 43, 44, 0.8);
+    border: 5px solid black; 
+    border-radius: 15px;
+    position: relative;
+    transform: translate(50px, 50px);
+    z-index: 2;
+}
